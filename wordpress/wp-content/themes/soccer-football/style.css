@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/*
+Theme Name: Soccer Football
+Author: TheMagnifico52
+Theme URI: https://www.themagnifico.net/products/free-soccer-wordpress-theme
+Author URI: https://www.themagnifico.net/
+Description: Soccer Football is multipurpose theme. It is best for Football, Soccer, Sport News WordPress Theme is a first-class ever answer for a sports activities website, like a football, baseball or soccer crew site, sports activities activities and games, recreation information on-line magazine, children’s sports activities golf equipment kind for website. Soccer football provide a location the place activity has a exclusive place. This urban, soccer football theme has the whole thing you may additionally want to create a current sports activities store with ease. Soccer comes with a effective points together with rapid view pop-up, order tracking functionality, full width dropdown cart, product carousel and sliders, consumer log-in and lots more. Sell fitness center tools or sports activities garments like a pro, with soccer football preferences and product layouts. Never pass over out the hazard to amaze game enthusiasts with your amazing website. this is an quintessential area of interest for the Sports Club theme. It has a elegant broad graph that will suit a lot of sports activities news, and a effective Blog shortcode that lets in arranging posts in a standard, masonry or timeline style. The performance makes it ideal for a sports activities information website.
+Version: 1.7.8
+Tested up to: 6.6
+Requires PHP: 7.2
+Requires at least: 5.0
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: football-sports-club
+Text Domain: soccer-football
+Tags: custom-logo, one-column, two-columns, wide-blocks, block-styles, editor-style, sticky-post, custom-background, custom-colors, custom-header, custom-menu, footer-widgets, featured-images, flexible-header, full-width-template, threaded-comments, theme-options, rtl-language-support, left-sidebar, right-sidebar, grid-layout, entertainment, e-commerce, portfolio
+
+Soccer Football WordPress Theme has been created by TheMagnifico52(themagnifico.net), 2022.
+Soccer Football WordPress Theme is released under the terms of GNU GPL
+*/
+
+body,.sidebar ul li a,.sidebar li,.meta-info-box span, .meta-info-box a{
+    color: #a9a9a9;
+}
+footer#colophon {
+    background: #232a34;
+}
+.footer-column {
+    border-bottom: 1px solid #fff;
+}
+.btn-primary{
+    background-color: #ffa800;
+    border-color: #ffa800;
+}
+.btn-primary:hover{
+    background-color: #fff;
+    color: #ffa800;
+}
+input.search-submit.btn.btn-primary:hover{
+    color: #232a34;
+}
+.sidebar h5,#button,.post-navigation .nav-previous a:hover, .post-navigation .nav-next a:hover, .posts-navigation .nav-previous a:hover, .posts-navigation .nav-next a:hover,.main-navigation .sub-menu,.comment-respond input#submit,.woocommerce .woocommerce-ordering select,.pro-button a, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,.woocommerce-account .woocommerce-MyAccount-navigation ul li,.sidebar input[type="submit"], .sidebar button[type="submit"],.sidebar .tagcloud a:hover,.top_header,.slider-box-btn a,#top-slider .owl-nav i:hover,.box-icon i{
+    background: #ffa800;
+}
+.wp-block-button__link{
+    background: #ffa800 !important;
+}
+.woocommerce-message, .woocommerce-info,.post-navigation .nav-previous a:hover, .post-navigation .nav-next a:hover, .posts-navigation .nav-previous a:hover, .posts-navigation .nav-next a:hover{
+    border-color: #ffa800;
+}
+.wp-block-quote, .wp-block-quote:not(.is-large):not(.is-style-large), .wp-block-pullquote{
+    border-left: 4px solid #ffa800 !important;
+}
+#colophon a:hover,a,.article-box a,.sidebar ul li a:hover,.main-navigation .menu > li > a:hover,p.price, .woocommerce ul.products li.product .price, .woocommerce div.product p.price, .woocommerce div.product span.price,.woocommerce-message::before, .woocommerce-info::before,.navbar-brand a,#top-slider .owl-nav i{
+    color: #ffa800;
+}
+.main-navigation .sub-menu > li > a:hover, .main-navigation .sub-menu > li > a:focus,.pro-button a:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,#button:hover, #button:active,.slider-box-btn a:hover, .team-btn a:hover,.box-category, .box-image img{
+    background: #232a34;
+}
+.main-navigation ul.sub-menu > li > a:hover, .main-navigation ul.sub-menu > li > a:focus {
+    background: #1b212f;
+    color: #fff !important;
+}
+#site-navigation .menu ul li a:hover {
+    color: #ffa800;
+}
+h1, h2, h3, h4, h5, h6,.top_header span i, .social-link i:hover,.main-navigation .menu > li > a,.sports-activities h3{
+    color:  #232a34;
+}
+span.match-cl,.top_header span,.social-link i,.slider-inner-box h1 a,.slider-box-btn a,.box-category h4{
+    color: #fff;
+}
+.box-icon i{
+    border-color: #fff;
+}
+.top_header{
+    border-bottom: none;
+}
+.article-box a:hover{
+    color: #232a34;
+}
+.top_header span:hover, .top_header span a:hover, .navbar-brand a:hover{
+    color: #232a34;
+}
+.top_header span a{
+    color: #fff;
+}
+.box-category a:hover{
+    color: #fff;
+}
+@media screen and (min-width: 720px) and (max-width: 991px){
+   .slider-inner-box h1 a {
+    font-size: 40px;
+   }
+}
+@media screen and (max-width: 1000px){
+   .toggle-nav i,.sidenav .closebtn {
+        background: #ffa800;
+    }
+    .sidenav,.main-navigation .sub-menu{
+        background: #232a34;
+    }
+    .main-navigation .menu > li > a, .main-navigation .sub-menu > li > a, .main-navigation .sub-menu > li > .menu-item-link-return{
+        color: #fff;
+    }
+    .main-navigation ul.sub-menu > li > a:hover, .main-navigation ul.sub-menu > li > a:focus, .main-navigation .menu > li > a:hover {
+        background: transparent;
+        color: #ffa800 !important;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+
+}
