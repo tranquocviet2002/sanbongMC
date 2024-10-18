@@ -3,7 +3,7 @@
  * The base configuration for WordPress
  *
  * The wp-config.php creation script uses this file during the installation.
- * You don't have to use the website, you can copy this file to "wp-config.php"
+ * You don't have to use the website, you can copy this file to "wp-config.php" 
  * and fill in the values.
  *
  * This file contains the following configurations:
@@ -17,6 +17,9 @@
  *
  * @package WordPress
  */
+define('WP_DEBUG', true); // Bạn có thể đặt thành false khi không cần gỡ lỗi
+define('WP_DEBUG_LOG', true);
+define('WP_DEBUG_DISPLAY', false);
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
@@ -79,11 +82,8 @@ $table_prefix = 'wp_';
  *
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
-define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
-
-
 
 /* That's all, stop editing! Happy publishing. */
 

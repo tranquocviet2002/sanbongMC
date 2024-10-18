@@ -1,6 +1,56 @@
 
 
 <?php
+function create_booking_table() {
+    global $wpdb;
+    $table_name = $wpdb->prefix . 'booking';
+    
+    $charset_collate = $wpdb->get_charset_collate();
+    
+    $sql = "CREATE TABLE $table_name (
+        id mediumint(9) NOT NULL AUTO_INCREMENT,
+        fullname varchar(255) NOT NULL,
+        phone varchar(50) NOT NULL,
+        email varchar(100),
+        field varchar(50) NOT NULL,
+        date date NOT NULL,
+        time time NOT NULL,
+        duration varchar(10) NOT NULL,
+        price varchar(50) NOT NULL,
+        payment_method varchar(50) NOT NULL,
+        notes text,
+        terms tinyint(1) NOT NULL,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+    
+    require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+    dbDelta( $sql );
+}
+
+add_action('after_setup_theme', 'create_booking_table');
+function handle_booking_form_submission() {
+    if (isset($_POST['fullname'])) {
+        global $wpdb;
+        $table_name = $wpdb->prefix . 'booking';
+
+        $data = array(
+            'fullname' => sanitize_text_field($_POST['fullname']),
+            'phone' => sanitize_text_field($_POST['phone']),
+            'email' => sanitize_email($_POST['email']),
+            'field' => sanitize_text_field($_POST['field']),
+            'date' => sanitize_text_field($_POST['date']),
+            'time' => sanitize_text_field($_POST['time']),
+            'duration' => sanitize_text_field($_POST['duration']),
+            'price' => sanitize_text_field($_POST['price']),
+            'payment_method' => sanitize_text_field($_POST['payment_method']),
+            'notes' => sanitize_textarea_field($_POST['notes']),
+            'terms' => intval($_POST['terms'])
+        );
+
+        $wpdb->insert($table_name, $data);
+    }
+}
+add_action('init', 'handle_booking_form_submission');
 
 /* Enqueue chlid theme scripts */
 function bloggly_enqueue_script() {
