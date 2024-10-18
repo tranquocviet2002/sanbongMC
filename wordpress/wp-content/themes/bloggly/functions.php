@@ -1,4 +1,7 @@
+
+
 <?php
+
 /* Enqueue chlid theme scripts */
 function bloggly_enqueue_script() {
 	$parent_style = 'parent-style';
@@ -49,3 +52,19 @@ add_action( 'customize_register', 'bloggly_customize_remove', 11 );
 
 // Include customizer file
 get_template_part('inc/customizer/bloggly-customizer');
+?>
+
+
+
+
+<?php
+// Kiểm tra nếu 'footer_content' chưa có trong database, thì thêm mới
+if (get_option('footer_content') === false) {
+    add_option('quick_links', 'Quick Links');
+    add_option('home1', 'Home');
+    add_option('about', 'About');
+    add_option('FAQ', 'FAQ');
+    add_option('Get_Started', 'Get Started');
+    add_option('Videos', 'Videos');
+}
+?>

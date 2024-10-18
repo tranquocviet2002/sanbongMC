@@ -7,6 +7,9 @@
  * Description: Footer with site title and powered by WordPress.
  */
 ?>
+<div>
+	
+</div>
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group">
 	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
